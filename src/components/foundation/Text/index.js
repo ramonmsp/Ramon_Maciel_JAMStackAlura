@@ -32,10 +32,21 @@ const menu = css`
   `}
 `;
 
+const section = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.section.fontSize};
+    font-weight: ${theme.typographyVariants.section.fontWeight};
+    line-height: ${theme.typographyVariants.section.lineHeight};
+  `}
+`;
+
+
 export const TextStyleVariants = {
   menu,
   subTitle,
   title,
+  section,
 };
 
 const TextBase = styled.span`

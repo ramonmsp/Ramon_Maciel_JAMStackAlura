@@ -30,11 +30,11 @@ const typographyVariants = {
     fontWeight: '400',
     lineHeight: 1.25, // 125%
   },
-  // [paragraph2]
-  paragraph2: {
-    fontSize: '14px',
+  // [section]
+  section: {
+    fontSize: '60px',
     fontWeight: '400',
-    lineHeight: 1.25, // 125%
+    lineHeight: '72px', // 125%
   },
   // [smallestException]
   smallestException: {
