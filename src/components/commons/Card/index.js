@@ -1,19 +1,21 @@
 import React from 'react';
-import {CardArea, Card} from './styles';
-import Text from '../../foundation/Text';
-// import card from '../../../../public/images/card_svg.svg'
+import { Card} from './styles';
+import PropTypes from 'prop-types';
 
-export default function CustomCard() {
+export default function CustomCard({title, src}) {
 
     return(
         <Card>
-            <Card.Image src='https://image.freepik.com/fotos-gratis/plano-de-fundo-texturizado-de-cores-de-pintura-multicolorida_23-2147836354.jpg' />
+            <Card.Image src={src} />
             <Card.Text>
-                Project Report
+                {title}
             </Card.Text>
         </Card>
 
     );
-
-
 }
+
+CustomCard.propTypes = {
+    title: PropTypes.string,
+    src: PropTypes.string,
+};
