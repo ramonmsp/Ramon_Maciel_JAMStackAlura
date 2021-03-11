@@ -41,12 +41,32 @@ const section = css`
   `}
 `;
 
+const cardTitle = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.cardTitle.fontSize};
+    font-weight: ${theme.typographyVariants.cardTitle.fontWeight};
+    line-height: ${theme.typographyVariants.cardTitle.lineHeight};
+  `}
+`;
+
+const cardTitleMobile = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.cardTitleMobile.fontSize};
+    font-weight: ${theme.typographyVariants.cardTitleMobile.fontWeight};
+    line-height: ${theme.typographyVariants.cardTitleMobile.lineHeight};
+  `}
+`;
+
 
 export const TextStyleVariants = {
   menu,
   subTitle,
   title,
   section,
+  cardTitle,
+  cardTitleMobile,
 };
 
 const TextBase = styled.span`

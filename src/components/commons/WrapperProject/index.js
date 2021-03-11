@@ -8,11 +8,10 @@ const WrapperProjects = styled.div`
     justify-content: center;
     align-items: center;
 
-    padding: 32px 0;
 
     ${breakpointsMedia({
         md: css`
-            padding: 64px 0;
+            flex-direction: row;
         `,
     })}
 `;

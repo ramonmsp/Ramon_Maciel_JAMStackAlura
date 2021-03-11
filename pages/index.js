@@ -4,7 +4,7 @@ import Box from '../src/components/foundation/layout/Box';
 import Cover from '../src/components/commons/Cover';
 import Header from '../src/components/commons/Header';
 import WrapperProjects from '../src/components/commons/WrapperProject';
-import SectionTitle from '../src/components/commons/SectionTitle';
+import SectionProjects from '../src/components/commons/SectionProjects';
 import CustomCard from '../src/components/commons/Card';
 
 export default function Home() {
@@ -32,17 +32,21 @@ export default function Home() {
       </Cover>
       <Header />
 
-      <WrapperProjects>
-        <SectionTitle>
+        <SectionProjects>
           <Text 
             variant="section"
             tag="span"
             >
               Meus Projetos
           </Text>
-        </SectionTitle>
-        <CustomCard />
-      </WrapperProjects>
+        </SectionProjects>
+        <WrapperProjects>
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+        </WrapperProjects>
     </Box>
   );
 }

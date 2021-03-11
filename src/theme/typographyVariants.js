@@ -24,11 +24,18 @@ const typographyVariants = {
     lineHeight: '58px',
     textTransform: 'capitalize',
   },
-  // [paragraph1]
-  paragraph1: {
-    fontSize: '16px',
-    fontWeight: '400',
-    lineHeight: 1.25, // 125%
+  // [cardTitle]
+  cardTitle: {
+    fontSize: '32px',
+    fontWeight: '700',
+    lineHeight: '38.4px', 
+  },
+
+  // [cardTitleMobile]
+  cardTitleMobile: {
+    fontSize: '24px',
+    fontWeight: '700',
+    lineHeight: '28.8px', 
   },
   // [section]
   section: {
