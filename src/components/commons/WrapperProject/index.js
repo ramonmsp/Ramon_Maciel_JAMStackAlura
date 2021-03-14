@@ -7,6 +7,7 @@ const WrapperProjects = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
 
     ${breakpointsMedia({

@@ -18,8 +18,9 @@ export const Card = styled.div`
     justify-content: space-around;
     align-items: center;
     margin: 8px;
+    order: 1;
 
-    border: 1px solid tomato;
+    border: 1px solid ${({theme}) => theme.colors.primary.main.color};
 `;
 
 Card.Image = styled.img`

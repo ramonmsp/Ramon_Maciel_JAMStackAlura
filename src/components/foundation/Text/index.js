@@ -59,6 +59,32 @@ const cardTitleMobile = css`
   `}
 `;
 
+const highlightXs = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.highlightXs.fontSize};
+    font-weight: ${theme.typographyVariants.highlightXs.fontWeight};
+    line-height: ${theme.typographyVariants.highlightXs.lineHeight};
+  `}
+`;
+
+const highlight = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.highlight.fontSize};
+    font-weight: ${theme.typographyVariants.highlight.fontWeight};
+    line-height: ${theme.typographyVariants.highlight.lineHeight};
+  `}
+`;
+
+const highlightSubtitle = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.highlightSubtitle.fontSize};
+    font-weight: ${theme.typographyVariants.highlightSubtitle.fontWeight};
+    line-height: ${theme.typographyVariants.highlightSubtitle.lineHeight};
+  `}
+`;
 
 export const TextStyleVariants = {
   menu,
@@ -67,6 +93,9 @@ export const TextStyleVariants = {
   section,
   cardTitle,
   cardTitleMobile,
+  highlightXs,
+  highlight,
+  highlightSubtitle,
 };
 
 const TextBase = styled.span`
