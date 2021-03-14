@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import breakpointsMedia from '../../../theme/utils/breakpointMedia';
 
 const WrapperProjects = styled.div`
@@ -11,10 +11,10 @@ const WrapperProjects = styled.div`
 
 
     ${breakpointsMedia({
-        md: css`
+    md: css`
             flex-direction: row;
         `,
-    })}
+  })}
 `;
 
 export default WrapperProjects;

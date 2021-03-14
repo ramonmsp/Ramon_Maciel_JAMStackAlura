@@ -1,6 +1,6 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import breakpointsMedia from '../../../../theme/utils/breakpointMedia';
-import {TextStyleVariants} from '../../../foundation/Text';
+import { TextStyleVariants } from '../../../foundation/Text';
 
 export const CardArea = styled.div`
 
@@ -20,7 +20,7 @@ export const Card = styled.div`
     margin: 8px;
     order: 1;
 
-    border: 1px solid ${({theme}) => theme.colors.primary.main.color};
+    border: 1px solid ${({ theme }) => theme.colors.primary.main.color};
 `;
 
 Card.Image = styled.img`
@@ -28,11 +28,11 @@ Card.Image = styled.img`
     height: 177px;
 
     ${breakpointsMedia({
-        md:css`
+    md: css`
             width: 287px;
             height: 390px;
         `,
-    })}
+  })}
 `;
 
 Card.Text = styled.span`
@@ -42,10 +42,10 @@ Card.Text = styled.span`
 
 
     ${breakpointsMedia({
-        md:css`
+    md: css`
             padding: 41px 0;
             ${TextStyleVariants.cardTitle}
         `,
-    })}
+  })}
 
 `;

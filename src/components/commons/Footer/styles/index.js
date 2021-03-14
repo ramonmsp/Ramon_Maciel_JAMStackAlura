@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
     display: flex;
@@ -7,7 +7,7 @@ const FooterWrapper = styled.footer`
 
     width: 100%;
     height: 68px;
-    background-color: ${({theme}) => theme.colors.secondary.main.color};
+    background-color: ${({ theme }) => theme.colors.secondary.main.color};
 
 `;
 
@@ -16,7 +16,7 @@ FooterWrapper.IconsContainer = styled.div`
     align-items: center;
 
     height: 100%;
-    background-color: ${({theme}) => theme.colors.primary.main.color};
+    background-color: ${({ theme }) => theme.colors.primary.main.color};
 
 `;
 

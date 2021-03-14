@@ -40,10 +40,6 @@ HeaderWrapper.RightSide = styled.nav`
   li{
     padding: 0 19px;
   }
-
-
-
-
 `;
 
 export default HeaderWrapper;

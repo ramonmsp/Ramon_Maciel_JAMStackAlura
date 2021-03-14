@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import breakpointsMedia from '../../../theme/utils/breakpointMedia';
 
 const SectionProjects = styled.div`
@@ -10,11 +10,11 @@ const SectionProjects = styled.div`
     padding-bottom: 33px;
 
     ${breakpointsMedia({
-        md: css`
+    md: css`
             padding-top: 64px;
             padding-bottom: 85px;
         `,
-    })}
+  })}
 
 `;
 
@@ -27,11 +27,11 @@ SectionProjects.Title = styled.section`
     padding-bottom: 33px;
 
     ${breakpointsMedia({
-        md: css`
+    md: css`
             padding-top: 64px;
             padding-bottom: 85px;
         `,
-    })}
+  })}
 
 `;
 

@@ -1,6 +1,6 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
 import breakpointsMedia from '../../../../../theme/utils/breakpointMedia';
-import {TextStyleVariants} from '../../../../foundation/Text';
+import { TextStyleVariants } from '../../../../foundation/Text';
 
 const HightlightWrapper = styled.div`
     display: flex;
@@ -43,14 +43,14 @@ HightlightWrapper.Image = styled.div`
 
 HightlightWrapper.HighlightContainer = styled.div`
     width: min-content;
-    background-color: ${({theme}) => theme.colors.background.light.color};
+    background-color: ${({ theme }) => theme.colors.background.light.color};
     margin-top: 5px;
     margin-left: 4px;
-    border: 1px solid ${({theme}) => theme.colors.borders.main.contrast};
+    border: 1px solid ${({ theme }) => theme.colors.borders.main.contrast};
 
 
     ${breakpointsMedia({
-        md: css`
+    md: css`
         margin-top: 12px;
         margin-left: 12px;
     `,
@@ -62,15 +62,14 @@ HightlightWrapper.HighlightText = styled.span`
     ${TextStyleVariants.highlightXs}    
 
     ${breakpointsMedia({
-        md: css`
+    md: css`
             ${TextStyleVariants.highlight}
             padding: 0 41px;
         `,
-    })}
+  })}
 
 
 `;
-
 
 HightlightWrapper.TitleContainer = styled.div`
     display: flex;
@@ -79,11 +78,11 @@ HightlightWrapper.TitleContainer = styled.div`
     align-items: center;
 
     ${breakpointsMedia({
-        md: css`
+    md: css`
             align-items: flex-start;
             padding-left: 30px;
         `,
-    })}
+  })}
 
 
 
@@ -93,23 +92,22 @@ HightlightWrapper.Title = styled.h1`
     ${TextStyleVariants.cardTitleMobile};
 
     ${breakpointsMedia({
-        md: css`
+    md: css`
             ${TextStyleVariants.cardTitle};
             margin: 28px 0;
         `,
-    })}
+  })}
 `;
-
 
 HightlightWrapper.Subtitle = styled.h3`
     display: none;                      
 
     ${breakpointsMedia({
-        md: css`
+    md: css`
             display: flex;
             ${TextStyleVariants.highlightSubtitle};
         `,
-    })}
+  })}
 `;
 
 export default HightlightWrapper;
