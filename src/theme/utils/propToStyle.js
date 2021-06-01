@@ -1,6 +1,7 @@
-import breakpointsMedia from './breakpointMedia';
+import breakpointsMedia from './breakpointsMedia';
 
-export default function propToStyle(propName) {
+// eslint-disable-next-line import/prefer-default-export
+export function propToStyle(propName) {
   // eslint-disable-next-line func-names
   // eslint-disable-next-line consistent-return
   return function (props) {

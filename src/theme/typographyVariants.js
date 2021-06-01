@@ -28,14 +28,14 @@ const typographyVariants = {
   cardTitle: {
     fontSize: '32px',
     fontWeight: '700',
-    lineHeight: '38.4px', 
+    lineHeight: '38.4px',
   },
 
   // [cardTitleMobile]
   cardTitleMobile: {
     fontSize: '24px',
     fontWeight: '700',
-    lineHeight: '28.8px', 
+    lineHeight: '28.8px',
   },
   // [section]
   section: {
@@ -66,6 +66,11 @@ const typographyVariants = {
     fontSize: '18px',
     fontWeight: '400',
     lineHeight: '21.6px',
+  },
+  modalTitle: {
+    fontSize: '36px',
+    fontWeight: '400',
+    lineHeight: '43.2px',
   },
 
 };
