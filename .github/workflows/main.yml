@@ -27,7 +27,10 @@ jobs:
           node-version: '14.15.0'
 
       # Runs a single command using the runners shell
+      - Instala dependencias
+      - yarn install
       - name: Roda o linter
+       -run: yarn lint
         run: yarn lint
 
       # Runs a set of commands using the runners shell
