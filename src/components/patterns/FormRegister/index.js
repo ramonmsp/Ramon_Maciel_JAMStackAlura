@@ -62,11 +62,8 @@ function FormContent() {
           })
           .then((convertedResponse) => {
             setSubmitStatus(formStates.DONE);
-            console.log(convertedResponse);
           })
           .catch((error) => {
-            setSubmitStatus(formStates.ERROR);
-            console.error(error);
           });
       }}
       style={{
