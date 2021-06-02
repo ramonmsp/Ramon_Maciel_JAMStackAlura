@@ -67,6 +67,11 @@ const typographyVariants = {
     fontWeight: '400',
     lineHeight: '21.6px',
   },
+  modalTitle: {
+    fontSize: '36px',
+    fontWeight: '400',
+    lineHeight: '43.2px',
+  },
 
 };
 

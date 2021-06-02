@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import get from 'lodash/get';
-import propToStyle from '../../../theme/utils/propToStyle';
+import { propToStyle } from '../../../theme/utils/propToStyle';
 
 const subTitle = css`
     ${({ theme }) => css`
@@ -86,6 +86,15 @@ const highlightSubtitle = css`
   `}
 `;
 
+const modalTitle = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.modalTitle.fontSize};
+    font-weight: ${theme.typographyVariants.modalTitle.fontWeight};
+    line-height: ${theme.typographyVariants.modalTitle.lineHeight};
+  `}
+`;
+
 export const TextStyleVariants = {
   menu,
   subTitle,
@@ -96,6 +105,7 @@ export const TextStyleVariants = {
   highlightXs,
   highlight,
   highlightSubtitle,
+  modalTitle,
 };
 
 const TextBase = styled.span`
@@ -103,6 +113,7 @@ const TextBase = styled.span`
     color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
     ${propToStyle('textAlign')} ;
     ${propToStyle('marginBottom')};
+    ${propToStyle('marginTop')};
     ${propToStyle('margin')};
 `;
 

@@ -64,7 +64,6 @@ function FormContent() {
             setSubmitStatus(formStates.DONE);
           })
           .catch((error) => {
-            setSubmitStatus(formStates.ERROR);
           });
       }}
       style={{
