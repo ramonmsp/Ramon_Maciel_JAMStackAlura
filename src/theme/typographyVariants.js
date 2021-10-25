@@ -72,6 +72,19 @@ const typographyVariants = {
     fontWeight: '400',
     lineHeight: '43.2px',
   },
+  cardText: {
+    fontSize: '18px',
+    fontWeight: '400',
+    fontStyle: 'normal',
+    textTransform: 'capitalize',
+    lineHeight: '22px',
+  },
+  projectName: {
+    fontSize: '18px',
+    fontWeight: '700',
+    fontStyle: 'normal',
+    lineHeight: '21px',
+  },
 
 };
 
