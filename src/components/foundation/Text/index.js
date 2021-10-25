@@ -95,6 +95,24 @@ const modalTitle = css`
   `}
 `;
 
+const cardText = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.cardText.fontSize};
+    font-weight: ${theme.typographyVariants.cardText.fontWeight};
+    line-height: ${theme.typographyVariants.cardText.lineHeight};
+  `}
+`;
+
+const projectName = css`
+    ${({ theme }) => css`
+    font-family: ${theme.fontFamily};
+    font-size: ${theme.typographyVariants.projectName.fontSize};
+    font-weight: ${theme.typographyVariants.projectName.fontWeight};
+    line-height: ${theme.typographyVariants.projectName.lineHeight};
+  `}
+`;
+
 export const TextStyleVariants = {
   menu,
   subTitle,
@@ -102,10 +120,12 @@ export const TextStyleVariants = {
   section,
   cardTitle,
   cardTitleMobile,
+  cardText,
   highlightXs,
   highlight,
   highlightSubtitle,
   modalTitle,
+  projectName,
 };
 
 const TextBase = styled.span`
@@ -115,6 +135,8 @@ const TextBase = styled.span`
     ${propToStyle('marginBottom')};
     ${propToStyle('marginTop')};
     ${propToStyle('margin')};
+    ${propToStyle('paddingLeft')};
+    ${propToStyle('paddingRight')};
 `;
 
 // eslint-disable-next-line func-names
